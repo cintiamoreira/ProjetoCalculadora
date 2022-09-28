@@ -280,6 +280,7 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
 
 
     }
+    //comentario do christian
 end;
 
 
