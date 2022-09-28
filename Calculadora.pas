@@ -246,19 +246,19 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
         ShowMessage (FloatToStr (valor1 + valor2));
     end;
 
-    //efetuando a subtração
+    //efetuando a subtraï¿½ï¿½o
     if lb_operador.Text = '-' then
     begin
         ShowMessage (FloatToStr (valor1 - valor2));
     end;
 
-    //efetuando a multiplicação
+    //efetuando a multiplicaï¿½ï¿½o
     if lb_operador.Text = '*' then
     begin
         ShowMessage (FloatToStr (valor1 * valor2));
     end;
 
-    //efetuando a divisão
+    //efetuando a divisï¿½o
     if lb_operador.Text = '/' then
     begin
         ShowMessage (FloatToStr (valor1 / valor2));
@@ -282,6 +282,7 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
     }
 
     //qualquer coisa
+    //comentario do christian
 
   end;
 
