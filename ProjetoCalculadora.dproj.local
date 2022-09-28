@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/16 11:26:13.000.910,=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/16 11:28:58.000.335,C:\Users\cinti\Desktop\Projetos Delphi\Inicial.pas=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/16 11:28:58.000.335,C:\Users\cinti\Desktop\Projetos Delphi\Inicial.dfm=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.dfm</Transaction>
+    <Transaction>2022/09/16 11:32:05.000.049,C:\Users\cinti\Desktop\Projetos Delphi\Project1.dproj=C:\Users\cinti\Desktop\Projetos Delphi\Project1.dproj</Transaction>
+    <Transaction>2022/09/20 14:24:47.000.317,=C:\Users\cinti\Desktop\Projetos Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/09/20 14:26:37.000.881,C:\Users\cinti\Desktop\Projetos Delphi\Unit2.dfm=C:\Users\cinti\Desktop\Projetos Delphi\TELA2.dfm</Transaction>
+    <Transaction>2022/09/20 14:26:37.000.881,C:\Users\cinti\Desktop\Projetos Delphi\Unit2.pas=C:\Users\cinti\Desktop\Projetos Delphi\TELA2.pas</Transaction>
+    <Transaction>2022/09/20 14:58:31.000.293,C:\Users\cinti\Desktop\Projetos Delphi\TELA2.pas=</Transaction>
+    <Transaction>2022/09/20 14:59:49.000.847,=C:\Users\cinti\Desktop\Projetos Delphi\Unit2.pas</Transaction>
+    <Transaction>2022/09/20 15:01:32.000.283,C:\Users\cinti\Desktop\Projetos Delphi\Unit2.pas=C:\Users\cinti\Desktop\Projetos Delphi\TELA2.pas</Transaction>
+    <Transaction>2022/09/20 15:01:32.000.283,C:\Users\cinti\Desktop\Projetos Delphi\Unit2.dfm=C:\Users\cinti\Desktop\Projetos Delphi\TELA2.dfm</Transaction>
+    <Transaction>2022/09/20 16:00:12.000.438,=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/20 16:30:04.000.850,=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/20 16:47:15.000.648,=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/20 16:47:46.000.921,C:\Users\cinti\Desktop\Projetos Delphi\ProjetoCalculadora\Calculadora.pas=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.pas</Transaction>
+    <Transaction>2022/09/20 16:47:46.000.921,C:\Users\cinti\Desktop\Projetos Delphi\ProjetoCalculadora\Calculadora.fmx=C:\Users\cinti\Desktop\Projetos Delphi\Unit1.fmx</Transaction>
+    <Transaction>2022/09/20 16:47:55.000.960,C:\Users\cinti\Desktop\Projetos Delphi\ProjetoCalculadora\ProjetoCalculadora.dproj=C:\Users\cinti\Desktop\Projetos Delphi\Project1.dproj</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Calculadora.pas"/>
+    <File Path="Calculadora.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>
