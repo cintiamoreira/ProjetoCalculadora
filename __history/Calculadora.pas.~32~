@@ -1,4 +1,4 @@
-﻿unit Calculadora;
+unit Calculadora;
 
 interface
 
@@ -246,19 +246,19 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
         ShowMessage (FloatToStr (valor1 + valor2));
     end;
 
-    //efetuando a subtracao
+    //efetuando a subtra��o
     if lb_operador.Text = '-' then
     begin
         ShowMessage (FloatToStr (valor1 - valor2));
     end;
 
-    //efetuando a multiplicacao
+    //efetuando a multiplica��o
     if lb_operador.Text = '*' then
     begin
         ShowMessage (FloatToStr (valor1 * valor2));
     end;
 
-    //efetuando a divisao
+    //efetuando a divis�o
     if lb_operador.Text = '/' then
     begin
         ShowMessage (FloatToStr (valor1 / valor2));
