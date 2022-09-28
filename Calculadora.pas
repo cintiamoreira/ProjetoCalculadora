@@ -280,11 +280,7 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
 
 
     }
-
-
-
-
-  end;
+end;
 
 
 procedure Tfrm_calculadora.btn_limparClick(Sender: TObject);
