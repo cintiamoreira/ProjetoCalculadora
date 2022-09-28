@@ -1,4 +1,4 @@
-unit Calculadora;
+ï»¿unit Calculadora;
 
 interface
 
@@ -31,8 +31,9 @@ type
     lb_operador: TLabel;
     lb_valor1: TLabel;
     lb_valor2: TLabel;
-    btn_apagar: TButton;
+    btn_limpar: TButton;
     btn_deletar: TButton;
+    btn_c: TButton;
     procedure btn_diminuirClick(Sender: TObject);
     procedure btn_somarClick(Sender: TObject);
     procedure btn_multiplicarClick(Sender: TObject);
@@ -48,6 +49,10 @@ type
     procedure btn_8Click(Sender: TObject);
     procedure btn_9Click(Sender: TObject);
     procedure btn_0Click(Sender: TObject);
+    procedure btn_limparClick(Sender: TObject);
+    procedure btn_cClick(Sender: TObject);
+    procedure btn_4Click(Sender: TObject);
+    procedure btn_5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -112,6 +117,30 @@ begin
   end;
 end;
 
+procedure Tfrm_calculadora.btn_4Click(Sender: TObject);
+begin
+  if lb_operador.Text = '.' then
+  begin
+    lb_valor1.Text := lb_valor1.Text + '4';
+  end
+  else
+  begin
+    lb_valor2.Text := lb_valor2.Text + '4';
+  end;
+end;
+
+procedure Tfrm_calculadora.btn_5Click(Sender: TObject);
+begin
+if lb_operador.Text = '.' then
+  begin
+    lb_valor1.Text := lb_valor1.Text + '5';
+  end
+  else
+  begin
+    lb_valor2.Text := lb_valor2.Text + '5';
+  end;
+end;
+
 procedure Tfrm_calculadora.btn_6Click(Sender: TObject);
 begin
  if lb_operador.Text = '.' then
@@ -160,6 +189,19 @@ begin
   end;
 end;
 
+procedure Tfrm_calculadora.btn_cClick(Sender: TObject);
+begin
+    if lb_operador.Text = '.' then
+    begin
+        lb_valor1.Text := '';
+    end
+    else
+    begin
+        lb_valor2.Text := '';
+    end;
+
+end;
+
 procedure Tfrm_calculadora.btn_deletarClick(Sender: TObject);
 begin
   if lb_operador.Text = '.' then
@@ -201,30 +243,35 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
     //efetuando a soma
     if lb_operador.Text = '+' then
     begin
-        ShowMessage (' = ' + FloatToStr (valor1 + valor2));
+        ShowMessage (FloatToStr (valor1 + valor2));
     end;
 
-    //efetuando a subtração
+    //efetuando a subtracao
     if lb_operador.Text = '-' then
     begin
-        ShowMessage (' = ' + FloatToStr (valor1 - valor2));
+        ShowMessage (FloatToStr (valor1 - valor2));
     end;
 
-    //efetuando a multiplicação
+    //efetuando a multiplicacao
     if lb_operador.Text = '*' then
     begin
-        ShowMessage (' = ' + FloatToStr (valor1 * valor2));
+        ShowMessage (FloatToStr (valor1 * valor2));
     end;
 
-    //efetuando a divisão
+    //efetuando a divisao
     if lb_operador.Text = '/' then
     begin
-        ShowMessage (' = ' + FloatToStr (valor1 / valor2));
+        ShowMessage (FloatToStr (valor1 / valor2));
     end;
 
     lb_operador.Text := '.';
     lb_valor1.Text := '';
     lb_valor2.Text := '';
+
+   btn_somar.Enabled := true;
+   btn_diminuir.Enabled := true;
+   btn_multiplicar.Enabled := true;
+   btn_dividir.Enabled := true;
 
     //switch
     {
@@ -233,16 +280,29 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
 
 
     }
+end;
 
-  end;
+
+
+procedure Tfrm_calculadora.btn_limparClick(Sender: TObject);
+begin
+    lb_operador.Text := '.';
+    lb_valor1.Text := '';
+    lb_valor2.Text := '';
+
+    btn_somar.Enabled := true;
+    btn_diminuir.Enabled := true;
+    btn_multiplicar.Enabled := true;
+    btn_dividir.Enabled := true;
+end;
 
 procedure Tfrm_calculadora.btn_multiplicarClick(Sender: TObject);
 begin
 lb_operador.Text := '*';
-btn_somar.Enabled := true;
- btn_diminuir.Enabled := true;
- btn_multiplicar.Enabled := false;
- btn_dividir.Enabled := true;
+  btn_somar.Enabled := true;
+  btn_diminuir.Enabled := true;
+  btn_multiplicar.Enabled := false;
+  btn_dividir.Enabled := true;
 end;
 
 procedure Tfrm_calculadora.btn_pontoClick(Sender: TObject);
