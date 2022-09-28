@@ -281,8 +281,8 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
 
     }
 
-    //qualquer coisa
-    //comentario do christian
+
+
 
   end;
 
