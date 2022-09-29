@@ -1,4 +1,4 @@
-unit Calculadora;
+ï»¿unit Calculadora;
 
 interface
 
@@ -50,6 +50,9 @@ type
     procedure btn_9Click(Sender: TObject);
     procedure btn_0Click(Sender: TObject);
     procedure btn_limparClick(Sender: TObject);
+    procedure btn_cClick(Sender: TObject);
+    procedure btn_4Click(Sender: TObject);
+    procedure btn_5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -114,6 +117,30 @@ begin
   end;
 end;
 
+procedure Tfrm_calculadora.btn_4Click(Sender: TObject);
+begin
+  if lb_operador.Text = '.' then
+  begin
+    lb_valor1.Text := lb_valor1.Text + '4';
+  end
+  else
+  begin
+    lb_valor2.Text := lb_valor2.Text + '4';
+  end;
+end;
+
+procedure Tfrm_calculadora.btn_5Click(Sender: TObject);
+begin
+if lb_operador.Text = '.' then
+  begin
+    lb_valor1.Text := lb_valor1.Text + '5';
+  end
+  else
+  begin
+    lb_valor2.Text := lb_valor2.Text + '5';
+  end;
+end;
+
 procedure Tfrm_calculadora.btn_6Click(Sender: TObject);
 begin
  if lb_operador.Text = '.' then
@@ -162,6 +189,18 @@ begin
   end;
 end;
 
+procedure Tfrm_calculadora.btn_cClick(Sender: TObject);
+begin
+    if lb_operador.Text = '.' then
+    begin
+        lb_valor1.Text := '';
+    end
+    else
+    begin
+        lb_valor2.Text := '';
+    end;
+end;
+
 procedure Tfrm_calculadora.btn_deletarClick(Sender: TObject);
 begin
   if lb_operador.Text = '.' then
@@ -206,19 +245,19 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
         ShowMessage (FloatToStr (valor1 + valor2));
     end;
 
-    //efetuando a subtração
+    //efetuando a subtracao
     if lb_operador.Text = '-' then
     begin
         ShowMessage (FloatToStr (valor1 - valor2));
     end;
 
-    //efetuando a multiplicação
+    //efetuando a multiplicacao
     if lb_operador.Text = '*' then
     begin
         ShowMessage (FloatToStr (valor1 * valor2));
     end;
 
-    //efetuando a divisão
+    //efetuando a divisao
     if lb_operador.Text = '/' then
     begin
         ShowMessage (FloatToStr (valor1 / valor2));
@@ -236,13 +275,8 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
     //switch
     {
     case
-
-
-
     }
-
   end;
-
 
 procedure Tfrm_calculadora.btn_limparClick(Sender: TObject);
 begin

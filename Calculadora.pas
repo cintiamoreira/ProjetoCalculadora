@@ -80,8 +80,7 @@ end;
 
 procedure Tfrm_calculadora.btn_1Click(Sender: TObject);
 begin
-
-if lb_operador.Text = '.' then
+  if lb_operador.Text = '.' then
   begin
     lb_valor1.Text := lb_valor1.Text + '1';
   end
@@ -89,13 +88,11 @@ if lb_operador.Text = '.' then
   begin
     lb_valor2.Text := lb_valor2.Text + '1';
   end;
-
 end;
 
 procedure Tfrm_calculadora.btn_2Click(Sender: TObject);
 begin
-
-if lb_operador.Text = '.' then
+  if lb_operador.Text = '.' then
   begin
     lb_valor1.Text := lb_valor1.Text + '2';
   end
@@ -143,7 +140,7 @@ end;
 
 procedure Tfrm_calculadora.btn_6Click(Sender: TObject);
 begin
- if lb_operador.Text = '.' then
+  if lb_operador.Text = '.' then
   begin
     lb_valor1.Text := lb_valor1.Text + '6';
   end
@@ -155,7 +152,7 @@ end;
 
 procedure Tfrm_calculadora.btn_7Click(Sender: TObject);
 begin
- if lb_operador.Text = '.' then
+  if lb_operador.Text = '.' then
   begin
     lb_valor1.Text := lb_valor1.Text + '7';
   end
@@ -179,7 +176,7 @@ end;
 
 procedure Tfrm_calculadora.btn_9Click(Sender: TObject);
 begin
-   if lb_operador.Text = '.' then
+  if lb_operador.Text = '.' then
   begin
     lb_valor1.Text := lb_valor1.Text + '9';
   end
@@ -191,14 +188,14 @@ end;
 
 procedure Tfrm_calculadora.btn_cClick(Sender: TObject);
 begin
-    if lb_operador.Text = '.' then
-    begin
-        lb_valor1.Text := '';
-    end
-    else
-    begin
-        lb_valor2.Text := '';
-    end;
+  if lb_operador.Text = '.' then
+  begin
+    lb_valor1.Text := '';
+  end
+  else
+  begin
+    lb_valor2.Text := '';
+  end;
 end;
 
 procedure Tfrm_calculadora.btn_deletarClick(Sender: TObject);
@@ -233,7 +230,6 @@ procedure Tfrm_calculadora.btn_dividirClick(Sender: TObject);
 
 procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
   var valor1, valor2 : double;
-
   begin
     valor1 := StrToFloat (lb_valor1.Text);
     valor2 := StrToFloat (lb_valor2.Text);
@@ -292,7 +288,7 @@ end;
 
 procedure Tfrm_calculadora.btn_multiplicarClick(Sender: TObject);
 begin
-lb_operador.Text := '*';
+  lb_operador.Text := '*';
   btn_somar.Enabled := true;
   btn_diminuir.Enabled := true;
   btn_multiplicar.Enabled := false;
@@ -313,11 +309,11 @@ end;
 
 procedure Tfrm_calculadora.btn_somarClick(Sender: TObject);
 begin
-lb_operador.Text := '+';
-btn_somar.Enabled := false;
- btn_diminuir.Enabled := true;
- btn_multiplicar.Enabled := true;
- btn_dividir.Enabled := true;
+  lb_operador.Text := '+';
+  btn_somar.Enabled := false;
+  btn_diminuir.Enabled := true;
+  btn_multiplicar.Enabled := true;
+  btn_dividir.Enabled := true;
 end;
 
 end.
