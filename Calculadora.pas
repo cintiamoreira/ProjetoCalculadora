@@ -199,7 +199,6 @@ begin
     begin
         lb_valor2.Text := '';
     end;
-
 end;
 
 procedure Tfrm_calculadora.btn_deletarClick(Sender: TObject);
@@ -276,16 +275,8 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
     //switch
     {
     case
-
-
-
     }
-    //comentáriodacintia
-
-
-
-    //novo comentário
-end;
+  end;
 
 
 
