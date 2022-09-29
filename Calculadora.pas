@@ -278,8 +278,6 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
     }
   end;
 
-
-
 procedure Tfrm_calculadora.btn_limparClick(Sender: TObject);
 begin
     lb_operador.Text := '.';
