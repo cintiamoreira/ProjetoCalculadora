@@ -267,11 +267,6 @@ procedure Tfrm_calculadora.btn_igualClick(Sender: TObject);
    btn_diminuir.Enabled := true;
    btn_multiplicar.Enabled := true;
    btn_dividir.Enabled := true;
-
-    //switch
-    {
-    case
-    }
   end;
 
 procedure Tfrm_calculadora.btn_limparClick(Sender: TObject);
